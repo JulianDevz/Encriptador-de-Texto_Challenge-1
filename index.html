@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Secret</title>
+  <link rel="stylesheet" href="css/normalice.css">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100;400;700&family=Montserrat:wght@100;400;800&family=Staatliches&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100;400;700&family=Montserrat:wght@100;400;800&family=Poppins:wght@100;400;800&family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="titulo">Encripta tu texto!</h1>
+  </header>
+
+  <main class="contenedor secciones">
+    <section class="form seccion1">
+      <form action="" class="formulario">
+        <div class="formulario_input">
+          <textarea class="text-input input1" type="text" name="input-texto" id="input-texto" placeholder="Ingresa el texto aqui" autofocus></textarea>
+        </div>
+        <div class="formulario_texto">
+          <label for="input-texto">&#33; Solo letras minúsculas, sin acento</label>
+        </div>
+        <div class="formulario_botones">
+          <input class="btn btn-encriptar" type="submit" value="Encriptar" id="btn-encriptar">
+          <input class="btn btn-desencriptar" type="submit" value="Desencriptar" id="btn-desencriptar">
+          <input class="btn btn-limpiar" type="submit" value="Limpiar" id="btn-limpiarEntrada">
+        </div>
+      </form>
+    </section>
+  
+    <section class="msg box seccion2 formulario2">
+      <div class="formulario2_input">
+        <textarea class="text-input input2" type="text" id="msg" ></textarea>
+      </div>
+      <div class="formulario2_botones">
+        <button class="btn btn-copiar" id="btn-copy">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clipboard" width="26" height="26" viewBox="4 -2 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
+            <rect x="9" y="3" width="6" height="4" rx="2" />
+          </svg>
+          Copiar
+        </button> 
+        <input class="btn btn-limpiar" type="submit" value="Limpiar" id="btn-limpiarSalida">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__texto">By Julian Pachon - Todos los derechos Reservados 2022.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

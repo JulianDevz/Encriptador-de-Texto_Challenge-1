@@ -1,0 +1,185 @@
+/* Intente realizar el responsive para los diferentes dispositivos, pero aun no
+se me da muy bien, asi que por ahora lo dejare como pendiente */
+
+:root{
+  --primario: #0A3871;
+  --secundario: #D8DFE8;
+  --terciario: #AAB2D5;
+  --fondo: #E9ECF8;
+  --blanco: #fff;
+  --negro: #000;
+
+  --fuenteSecundaria: 'M PLUS 1 Code', sans-serif;
+  --fuentePrincipal: 'Poppins', sans-serif;
+}
+
+/*
+============================ CONFIGURAR ENTORNO ==============================
+*/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/*
+================================ GLOBALES ====================================
+*/
+body {
+  background-color: var(--fondo);
+  font-family: var(var(--fuentePrincipal));
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.contenedor{
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+/*
+================================= HEADER =========================================
+*/
+.header{
+  margin: 2rem 0;
+}
+h1{
+  text-align: center;
+  color: var(--primario);
+  font-family: var(--fuentePrincipal);
+  font-size: 4rem;
+}
+
+/*
+================================= BOX =========================================
+*/
+.box {
+  padding: 1rem;
+  margin: 0 1rem 0 4rem;
+  box-shadow: -1px 2px 8px 6px rgba(10,56,113,0.17);
+  border-radius: 0.5em;
+  width: 30vw;
+  height: auto;
+  background-color: var(--fondo);
+}
+
+/*
+================================= FORMULARIO =========================================
+*/
+
+.formulario{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.formulario_input{
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+.formulario_texto{
+  grid-column: 1/4;
+  grid-row: 2/3;
+  margin: 1rem;
+  font-size: 1.3rem;
+  font-family: var(--fuentePrincipal);
+}
+
+.formulario_botones{
+  grid-column: 1/4;
+  grid-row: 3/3;
+  display: flex;
+  justify-content:space-evenly;
+}
+
+
+
+/*
+================================= BOTONES =========================================
+*/
+
+.btn {
+  border: 0;
+  font-family: var(--fuentePrincipal);
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1rem 3rem 1rem 3rem;
+  margin: 1rem;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn:active {
+  transform: scale(1.3);
+  box-shadow: 4px 3px 22px 1px rgba(0, 0, 0, 0.24);
+}
+.btn-encriptar{
+  background-color: var(--primario);
+  color: var(--blanco);
+}
+
+.btn-desencriptar{
+  background-color: var(--secundario);
+  color: var(--primario);
+}
+
+.btn-copiar{
+  background-color: var(--terciario);
+  color: var(--blanco);
+}
+
+.btn-limpiar{
+  background-color: var(--fondo);
+  color: var(--primario);
+  border: 0.5px solid var(--primario);
+}
+
+/*
+================================= INPUTS =========================================
+*/
+
+.text-input {
+  border-radius: 0.5em;
+  border: none;
+  display: block;
+  padding: 0.5em;
+  width: 100%;
+  height: auto;
+  background-color: var(--fondo);
+  font-size: 4rem;
+  font-family: var(--fuentePrincipal);
+  resize: none;
+  outline: none;
+}
+
+@media (min-width: 1400px) {
+  .text-input {
+    height: 500px;
+  }
+}
+
+.input2 {
+  margin-bottom: 3rem;
+  font-family: var(--fuenteSecundaria);
+}
+
+/*
+================================= FOOTER =========================================
+*/
+
+.footer{
+  background-color: var(--secundario);
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer__texto{
+  font-family: var(--fuentePrincipal);
+  text-align: center;
+  font-size: 2rem;
+}
