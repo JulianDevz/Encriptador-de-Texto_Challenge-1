@@ -1,4 +1,4 @@
-# Encriptador de texto [Code Secret]
+# Encriptador de texto
 
 [![f2120ce-code-secret.png](https://i.postimg.cc/g0GBbgGb/f2120ce-code-secret.png)](https://postimg.cc/k2hyxFVT)
 
