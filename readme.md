@@ -5,7 +5,7 @@
 _Este repositorio fue creado como solución al Challengue #1 propuesto por el curso de Principios de Programacion de Alura Latam_
 \#ChallengeOneLogicaLatam
 
-[Puedes probarlo aqui!](https://juliantm.github.io/Encriptador-de-Texto_Challenge-1/)
+[Puedes probarlo aqui!](https://encriptador-texto-julian.netlify.app)
 
 ## Construido con 🛠️
 
